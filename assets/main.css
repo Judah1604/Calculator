@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+/* line 23, main.scss */
+* {
+  margin: 0;
+  overflow: hidden; }
+
+/* line 28, main.scss */
+body {
+  font-family: 'League Spartan', sans-serif;
+  background-color: #3a4764;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  height: 100vh;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out; }
+
+/* line 40, main.scss */
+.calculator {
+  width: 370px; }
+  /* line 43, main.scss */
+  .calculator .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    /* line 48, main.scss */
+    .calculator .header .themes {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: end;
+      text-transform: uppercase;
+      font-size: 0.9em;
+      width: 150px; }
+      /* line 56, main.scss */
+      .calculator .header .themes h3 {
+        font-size: 0.8em;
+        letter-spacing: 1px;
+        margin-bottom: 7px; }
+      /* line 62, main.scss */
+      .calculator .header .themes .toggle {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 5px; }
+        /* line 69, main.scss */
+        .calculator .header .themes .toggle .toggleBtn {
+          width: 100%;
+          height: 25px;
+          background-color: #232c43;
+          border-radius: 50px;
+          position: relative; }
+          /* line 76, main.scss */
+          .calculator .header .themes .toggle .toggleBtn .button {
+            background-color: #d03f2f;
+            position: absolute;
+            inset: 4px;
+            width: 17px;
+            height: 17px;
+            border-radius: 100%;
+            -webkit-transition: 0.3s ease-out;
+            transition: 0.3s ease-out;
+            cursor: pointer;
+            -webkit-transform: translateX(0);
+                    transform: translateX(0); }
+            /* line 87, main.scss */
+            .calculator .header .themes .toggle .toggleBtn .button:hover {
+              background-color: #d36255; }
+        /* line 93, main.scss */
+        .calculator .header .themes .toggle .toggle-no {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          width: 70px; }
+  /* line 103, main.scss */
+  .calculator .screen {
+    margin-top: 20px;
+    border-radius: 10px;
+    height: 70px;
+    background-color: #182034;
+    padding: 30px;
+    font-size: 3.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  /* line 115, main.scss */
+  .calculator .keypad {
+    margin-top: 1em;
+    border-radius: 10px;
+    background-color: #232c43;
+    padding: 20px;
+    font-size: 1.5em;
+    text-transform: uppercase; }
+    /* line 123, main.scss */
+    .calculator .keypad .keys {
+      color: #444b5a;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-gap: 15px; }
+      /* line 130, main.scss */
+      .calculator .keypad .keys .multiply {
+        text-transform: lowercase; }
+    /* line 135, main.scss */
+    .calculator .keypad .key,
+    .calculator .keypad .deleteKey,
+    .calculator .keypad .resetKey,
+    .calculator .keypad .equalsKey {
+      background-color: #eae3dc;
+      padding: 10px;
+      padding-bottom: 6px;
+      text-align: center;
+      border-radius: 5px;
+      border-bottom: 3px solid #b4a597;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+      cursor: pointer; }
+      /* line 148, main.scss */
+      .calculator .keypad .key:hover,
+      .calculator .keypad .deleteKey:hover,
+      .calculator .keypad .resetKey:hover,
+      .calculator .keypad .equalsKey:hover {
+        background-color: white; }
+    /* line 153, main.scss */
+    .calculator .keypad .others {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 15px;
+      text-align: center;
+      margin-top: 15px; }
+    /* line 161, main.scss */
+    .calculator .keypad .deleteKey,
+    .calculator .keypad .resetKey {
+      background-color: #637097;
+      border-bottom-color: #404e72;
+      color: #eae3dc; }
+      /* line 167, main.scss */
+      .calculator .keypad .deleteKey:hover,
+      .calculator .keypad .resetKey:hover {
+        background-color: #8b9dd3; }
+    /* line 172, main.scss */
+    .calculator .keypad .equalsKey {
+      background-color: #d03f2f;
+      border-bottom-color: #93261a; }
+      /* line 176, main.scss */
+      .calculator .keypad .equalsKey:hover {
+        background-color: #d36255; }
+
+/* line 185, main.scss */
+footer .attribution {
+  font-size: 11px;
+  text-align: center; }
+  /* line 189, main.scss */
+  footer .attribution a {
+    color: #3e52a3; }
+
+/* line 195, main.scss */
+.purple {
+  background-color: #160628;
+  color: #ffe53d; }
+  /* line 201, main.scss */
+  .purple .calculator .toggleBtn,
+  .purple .calculator .screen,
+  .purple .calculator .keypad {
+    background-color: #1d0934 !important; }
+  /* line 207, main.scss */
+  .purple .calculator .button {
+    background-color: #00e0d1 !important; }
+  /* line 211, main.scss */
+  .purple .calculator .key {
+    background-color: #341c4f !important;
+    color: #ffe53d;
+    border-bottom-color: #bc15f4 !important; }
+  /* line 217, main.scss */
+  .purple .calculator .deleteKey,
+  .purple .calculator .resetKey {
+    background-color: #58077d !important;
+    border-bottom-color: #bc15f4 !important; }
+  /* line 223, main.scss */
+  .purple .calculator .equalsKey {
+    background-color: #00e0d1 !important;
+    border-bottom-color: #6cf9f2 !important;
+    color: #1b2428 !important; }
+
+/* line 231, main.scss */
+.light {
+  background-color: #e6e6e6;
+  color: #1b2428; }
+  /* line 237, main.scss */
+  .light .calculator .toggleBtn,
+  .light .calculator .keypad {
+    background-color: #d1cccc !important; }
+  /* line 242, main.scss */
+  .light .calculator .screen {
+    background-color: #ededed !important;
+    color: #1b2428; }
+  /* line 247, main.scss */
+  .light .calculator .button {
+    background-color: #ca5502 !important; }
+    /* line 250, main.scss */
+    .light .calculator .button:hover {
+      background-color: #db7731 !important; }
+  /* line 255, main.scss */
+  .light .calculator .key {
+    background-color: #e5e4e1 !important;
+    color: #1b2428;
+    border-bottom-color: #a69d91 !important; }
+    /* line 260, main.scss */
+    .light .calculator .key:hover {
+      background-color: white !important; }
+  /* line 265, main.scss */
+  .light .calculator .deleteKey,
+  .light .calculator .resetKey {
+    background-color: #377f86 !important;
+    border-bottom-color: #1b5f65 !important; }
+    /* line 270, main.scss */
+    .light .calculator .deleteKey:hover,
+    .light .calculator .resetKey:hover {
+      background-color: #5d9ea5 !important; }
+  /* line 275, main.scss */
+  .light .calculator .equalsKey {
+    background-color: #ca5502 !important;
+    border-bottom-color: #893901 !important;
+    color: white !important; }
+    /* line 280, main.scss */
+    .light .calculator .equalsKey:hover {
+      background-color: #db7731 !important; }
+
+@media screen and (max-width: 375px) {
+  /* line 288, main.scss */
+  .calculator {
+    width: 90%; }
+    /* line 291, main.scss */
+    .calculator .screen {
+      height: 30px; }
+    /* line 296, main.scss */
+    .calculator .keypad .keys {
+      grid-gap: 10px; }
+    /* line 300, main.scss */
+    .calculator .keypad .key, .calculator .keypad .resetKey, .calculator .keypad .deleteKey {
+      padding: 15px 15px 10px 15px; }
+    /* line 304, main.scss */
+    .calculator .keypad .others {
+      margin-top: 10px;
+      grid-gap: 10px; } }
+
+/*# sourceMappingURL=main.css.map */
