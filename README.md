@@ -12,8 +12,6 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
 	- [Built with](#built-with)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -31,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-and-functional-calculator-with-javascript-f8nhd7GO5e)
+- Live Site URL: [Live Site](https://judah1604.github.io/Calculator/)
 
 ## My process
 
